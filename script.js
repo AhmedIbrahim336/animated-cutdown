@@ -3,6 +3,8 @@ const counter = document.querySelector('.counter');
 const finalMessage = document.querySelector('.final');
 const replay = document.querySelector('#replay');
 
+runAnimation();
+
 function resetDOM() {
   counter.classList.remove('hide');
   finalMessage.classList.remove('show');
@@ -13,6 +15,7 @@ function resetDOM() {
 
   nums[0].classList.add('in');
 }
+
 function runAnimation() {
   nums.forEach((num, idx) => {
     const nextToLast = nums.length - 1;
